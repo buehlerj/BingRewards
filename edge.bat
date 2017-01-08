@@ -42,6 +42,10 @@ IF "%ID%"=="37" set list=garage important penny gasp assault prospect century fi
 IF "%ID%"=="38" set list=couple steak greet band gain cherry campaign glasses penetrate strap print ensure smell commitment convulsion
 IF "%ID%"=="39" set list=load mobile appointment slice rush thrust cabin flag nursery coffin hesitate crack stain freedom corpse
 
+# Pull up a tab for the Daily Points
+start microsoft-edge:https://account.microsoft.com/rewards/dashboard?refd=www.bing.com
+
+# Every 5 seconds, open up a new tab with the word selected from the list.
 (for %%a in (%list%) do (
    start microsoft-edge:http://www.bing.com/search?q=%%a
    timeout 5
