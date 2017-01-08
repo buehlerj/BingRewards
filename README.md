@@ -16,3 +16,6 @@ I just took 15 random words and put them in the batch file. If you want to chang
 
 ## Compatibility
 Known to work for Windows 10
+
+*Note* This will not complete the daily extra points. One of the tabs opened will have those to manually click on.
+Also, you must be logged in to your Microsoft Account on Edge. You only need to do this once and it will remember for you.
