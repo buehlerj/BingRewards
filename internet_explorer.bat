@@ -46,8 +46,11 @@ IF "%ID%"=="39" set list=apparatus due landowner chaos fall retire swallow whip 
 # Every 5 seconds, open up a new tab with the word selected from the list.
 (for %%a in (%list%) do (
 	start /d "C:\Program Files\Internet Explorer" IEXPLORE.EXE http://www.bing.com/search?q=%%a
-	timeout 5
+	timeout 4
+	# Close all instances of internet explorer tabs
+	taskkill /f /im iexplore.exe
+	timeout 1
 ))
 
 # Pull up a tab for the Daily Points
-start microsoft-edge:https://account.microsoft.com/rewards/dashboard?refd=www.bing.com
+start /d "C:\Program Files\Internet Explorer" IEXPLORE.EXE https://account.microsoft.com/rewards/dashboard?refd=www.bing.com

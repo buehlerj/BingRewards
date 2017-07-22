@@ -45,7 +45,9 @@ IF "%ID%"=="39" set list=apparatus due landowner chaos fall retire swallow whip 
 # Every 5 seconds, open up a new tab with the word selected from the list.
 (for %%a in (%list%) do (
 	start microsoft-edge:http://www.bing.com/search?q=%%a
-	timeout 5
+	timeout 4
+	taskkill /f /im MicrosoftEdge.exe
+	timeout 1
 ))
 
 # Pull up a tab for the Daily Points
