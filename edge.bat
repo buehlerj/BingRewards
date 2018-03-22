@@ -45,7 +45,7 @@ IF "%ID%"=="39" set list=boat zesty line celery satisfy bathe border understood 
 # Every 5 seconds, open up a new tab with the word selected from the list.
 (for %%a in (%list%) do (
 	start microsoft-edge:http://www.bing.com/search?q=%%a
-	timeout 5
+	timeout 6
 ))
 
 # Pull up a tab for the Daily Points
